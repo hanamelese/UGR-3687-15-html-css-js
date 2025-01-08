@@ -4,36 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    
     <link rel="stylesheet" href="port.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
     <div class="main-container">
-        <div class="aside">
+        <aside class="aside" id="sidebar">
             <div class="logo">
-                <h1>portfolio</h1>
+                <h1>Portfolio</h1>
             </div>
-            <div class="toggle-menu" id="toggleMenu">
-                
-            </div>
-            <ul class="nav" id="navLinks">
-                <li><a href="Home.html" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="About.html"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="Skills.html"><i class="fa fa-list"></i>Skills</a></li>
-                <li><a href="Project.html"><i class="fa fa-briefcase"></i>Project</a></li>
-                <li><a href="Contact.html"><i class="fa fa-comment"></i>Contact</a></li>
-            </ul>
-        </div>
+            <nav>
+                <ul class="nav" id="navLinks">
+                    <li><a href="Home.html" class="active"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="About.html"><i class="fa fa-user"></i> About</a></li>
+                    <li><a href="Skills.html"><i class="fa fa-list"></i> Skills</a></li>
+                    <li><a href="Project.html"><i class="fa fa-briefcase"></i> Project</a></li>
+                    <li><a href="Contact.html"><i class="fa fa-comment"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
         <div class="main-content">
-            <div class="navv"> <i class="fa fa-bars"></i> </div>
-            <div class="home-header">Home</div>
+            <div class="navv" onclick="toggleSidebar()"><i class="fa fa-bars"></i></div>
+            <div class="home-header" >Home</div>
         </div>
         <div class="main-content">
             <section class="home section">
                 <div class="container">
                     <div class="row">
                         <div class="home-info">
-                            <h3 class="hello"><span class="name">Welcome to My Portfolio</span></h3>
+                            <h3 class="hello"><span class="invite">Welcome to My Portfolio</span></h3>
+                            <h3 class="name">Hana Melese</h3>
                             <h3 class="my-profession">I am a <span class="typing">Software Engineer</span></h3>
                             <p>I am currently a third-year Software Engineering student at Addis Ababa University,
                                  where I am developing my skills in software development, problem-solving, and project management.
@@ -49,8 +51,8 @@
             </section>
         </div>
     </div>
-
-    <script src="port.js">
-    </script>
+     <script src="port.js">
+    </script> 
+    
 </body>
 </html>

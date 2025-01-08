@@ -7,11 +7,12 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="port.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   
 </head>
 
 <body>
     <div class="main-container">
-        <aside class="aside">
+        <aside class="aside" id="sidebar">
             <div class="logo">
                 <h1>Portfolio</h1>
             </div>
@@ -26,9 +27,9 @@
             </nav>
         </aside>
         <main class="main-content">
-            <div class="navv"><i class="fa fa-bars"></i></div>
-            <h2 class="about-header">About</h2>
             <section class="about section">
+                <div class="navv" onclick="toggleSidebar()"><i class="fa fa-bars"></i></div>
+                <h2 class="about-header">About</h2>
                 <div class="container">
                     <div class="about-text padd-15">
                         <p>I’m a passionate software engineering student with a strong foundation in programming and a keen interest in web development. My journey in technology began with a curiosity about how software shapes our daily lives. I’ve developed skills in languages such as Python, JavaScript, HTML, and CSS, and I enjoy working with frameworks like React and Node.js. Through my academic projects and personal initiatives, I’ve honed my ability to solve complex problems and create user-friendly applications. I’m excited to continue learning and growing in this dynamic field, and I look forward to contributing to innovative projects that make a difference.</p>
@@ -78,6 +79,12 @@
             </div>
         </div>
     </footer>
+    <!-- <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script> -->
     <script src="port.js"></script>
 </body>
 

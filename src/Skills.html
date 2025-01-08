@@ -11,11 +11,10 @@
 
 <body>
     <div class="main-container">
-        <aside class="aside">
+        <aside class="aside" id="sidebar">
             <div class="logo">
-                <h1><span>p</span>ortfolio</h1>
+                <h1>Portfolio</h1>
             </div>
-            <div class="toggle-menu" id="toggleMenu"></div>
             <nav>
                 <ul class="nav" id="navLinks">
                     <li><a href="Home.html" class="active"><i class="fa fa-home"></i> Home</a></li>
@@ -27,7 +26,7 @@
             </nav>
         </aside>
         <main class="main-content">
-            <div class="navv"><i class="fa fa-bars"></i></div>
+            <div class="navv" onclick="toggleSidebar()"><i class="fa fa-bars"></i></div>
             <h2 class="skills-header">Skills</h2>
             <p>As a software engineer, I possess strong skills in Python, JavaScript, HTML, CSS, Java, React, Node.js, and MySQL, making me a proficient full-stack web developer with a solid foundation in data structures and algorithms.</p>
             <section class="skills">
@@ -57,10 +56,10 @@
                     <div class="skill-percent">70%</div>
                 </div>
             </section>
-            <h2>Certificates</h2>
+            <h2 style="color: #fe7a07;">Certificates</h2>
             <div class="certificates">
                 <img src="Images/CyberSecurity.png" alt="Cyber Security Certificate" loading="lazy">
-                <img src="Images/Networking.jpg" alt="Networking Certificate" loading="lazy">
+                <img src="Images/Networking.jpg" alt="Networking Certificate" loading="lazy" style="height: 170px;">
                 <img src="Images/Udacity.png" alt="Udacity Nanodegree Certificate" loading="lazy">
             </div>
         </main>
