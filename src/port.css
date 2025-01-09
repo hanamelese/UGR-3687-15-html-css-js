@@ -315,7 +315,7 @@ nav .nav li a.active {
     margin-left: 15px;
     border-radius: 30px;
     color: #661515;
-    box-shadow: #333;
+   
     font-size: 13px;
 }
 
@@ -405,17 +405,21 @@ nav .nav li a.active {
    width: 70%;
      margin-left: 60px;
   }
+  .buttons{
+    margin-left: 100px;
+  }
 .buttons a{
     display: flex;
     flex-direction: column;
     width: 150px;
-    align-items:center;
+    margin: 10px;
+
 }
 .contact-img{
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} 
 .contact-header{ 
     margin: 25px 70px;
 }
@@ -437,9 +441,6 @@ nav .nav li a.active {
 
 /* Tablet Portrait */
 @media only screen and (min-width: 810px) and (max-width: 1080px) and (orientation: portrait) {
-    .aside {
-        display: none; /* Hide aside by default on mobile/tablet */
-    }
     .main-content {
         margin-left: 0; /* No margin when aside is hidden */
     }
