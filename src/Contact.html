@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title >Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="port.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -12,12 +12,12 @@
 </head>
 
 <body>
-    <div class="main-container">
-        <aside class="aside" id="sidebar">
+    <div class="main-container" role="main">
+        <aside class="aside" id="sidebar" role="navigation">
             <div class="logo">
                 <h1>Portfolio</h1>
             </div>
-            <nav>
+            <nav aria-label="Main Navigation">
                 <ul class="nav" id="navLinks">
                     <li><a href="Home.html" class="active"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="About.html"><i class="fa fa-user"></i> About</a></li>
@@ -28,32 +28,27 @@
             </nav>
         </aside>
         <main class="main-content">
-            <div class="navv" onclick="toggleSidebar()"><i class="fa fa-bars"></i></div>
+            <div class="navv" onclick="toggleSidebar()" aria-label="Toggle Sidebar"><i class="fa fa-bars"></i></div>
             <h2 class="contact-header">Contact</h2>
             <div class="buttons">
-            
                 <a href="https://www.linkedin.com/in/hanamelese" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                     <i class='bx bxl-linkedin'></i>
                 </a>
                 <a href="https://www.instagram.com/armadillo.6662541/profilecard/?igsh=bnQyaXcwY3pzNTNu" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                     <i class='bx bxl-instagram'></i>
                 </a>
-           
                 <a href="https://t.me/hanitta111996" aria-label="Telegram" target="_blank" rel="noopener noreferrer">
                     <i class='bx bxl-telegram'></i>
                 </a>
                 <a href="https://github.com/hanamelese" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                     <i class='bx bxl-github'></i>
                 </a>
-            
-                
             </div>
             <h2>Thank You for Visiting!</h2>
             <div class="contact-img">
                 <img src="Images/photo2.jpg" alt="Image 1">
                 <img src="Images/photo3.jpg" alt="Image 2">
             </div>
-            
             <div class="description">
                 <p>
                     As I wrap up this chapter, I want to extend my heartfelt gratitude for taking the time to explore my work. Your interest and support mean the world to me.
@@ -61,7 +56,7 @@
                     Wishing you all the best in your own journeys!
                 </p>
             </div>
-        </main>       
+        </main>
     </div>
 
     <footer>

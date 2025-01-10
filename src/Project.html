@@ -10,24 +10,23 @@
 </head>
 
 <body>
-  
-        <div class="main-container">
-            <aside class="aside" id="sidebar">
-                <div class="logo">
-                    <h1>Portfolio</h1>
-                </div>
-                <nav>
-                    <ul class="nav" id="navLinks">
-                        <li><a href="Home.html" class="active"><i class="fa fa-home"></i> Home</a></li>
-                        <li><a href="About.html"><i class="fa fa-user"></i> About</a></li>
-                        <li><a href="Skills.html"><i class="fa fa-list"></i> Skills</a></li>
-                        <li><a href="Project.html"><i class="fa fa-briefcase"></i> Project</a></li>
-                        <li><a href="Contact.html"><i class="fa fa-comment"></i> Contact</a></li>
-                    </ul>
-                </nav>
-            </aside>
+    <div class="main-container" role="main">
+        <aside class="aside" id="sidebar" role="navigation">
+            <div class="logo">
+                <h1>Portfolio</h1>
+            </div>
+            <nav aria-label="Main Navigation">
+                <ul class="nav" id="navLinks">
+                    <li><a href="Home.html" class="active"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="About.html"><i class="fa fa-user"></i> About</a></li>
+                    <li><a href="Skills.html"><i class="fa fa-list"></i> Skills</a></li>
+                    <li><a href="Project.html"><i class="fa fa-briefcase"></i> Project</a></li>
+                    <li><a href="Contact.html"><i class="fa fa-comment"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
         <main class="main-content">
-            <div class="navv" onclick="toggleSidebar()"><i class="fa fa-bars"></i></div>
+            <div class="navv" onclick="toggleSidebar()" aria-label="Toggle Sidebar"><i class="fa fa-bars"></i></div>
             <h2 class="project-header">Projects</h2>
             <p>During my software engineering studies, I developed a diverse portfolio of projects that highlight my skills in full-stack development, algorithm design, and teamwork. My responsive web applications help users track fitness goals and showcase my proficiency with technologies like JavaScript, Python, and SQL. Each project demonstrates my ability to solve complex challenges, optimize performance, and create user-friendly interfaces. These experiences have enhanced my problem-solving skills and reinforced the importance of agile development practices, resulting in well-received applications focused on user experience and functionality.</p>
             
