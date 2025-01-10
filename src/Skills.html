@@ -10,13 +10,12 @@
 </head>
 
 <body>
-    <div class="main-container">
-        <aside class="aside">
+    <div class="main-container" role="main">
+        <aside class="aside" id="sidebar" role="navigation">
             <div class="logo">
-                <h1><span>p</span>ortfolio</h1>
+                <h1>Portfolio</h1>
             </div>
-            <div class="toggle-menu" id="toggleMenu"></div>
-            <nav>
+            <nav aria-label="Main Navigation">
                 <ul class="nav" id="navLinks">
                     <li><a href="Home.html" class="active"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="About.html"><i class="fa fa-user"></i> About</a></li>
@@ -27,40 +26,40 @@
             </nav>
         </aside>
         <main class="main-content">
-            <div class="navv"><i class="fa fa-bars"></i></div>
+            <div class="navv" onclick="toggleSidebar()"><i class="fa fa-bars"></i></div>
             <h2 class="skills-header">Skills</h2>
             <p>As a software engineer, I possess strong skills in Python, JavaScript, HTML, CSS, Java, React, Node.js, and MySQL, making me a proficient full-stack web developer with a solid foundation in data structures and algorithms.</p>
             <section class="skills">
                 <div class="skill-item">  
                     <h6>HTML</h6>
-                    <div class="skill-progress" style="width: 95%;"></div>
+                    <div class="skill-progress" style="width: 95%;" aria-valuenow="95"></div>
                     <div class="skill-percent">95%</div>
                 </div>
                 <div class="skill-item">
                     <h6>CSS</h6>
-                    <div class="skill-progress" style="width: 90%;"></div>
+                    <div class="skill-progress" style="width: 90%;" aria-valuenow="90"></div>
                     <div class="skill-percent">90%</div>
                 </div>
                 <div class="skill-item">
                     <h6>JavaScript</h6>
-                    <div class="skill-progress" style="width: 80%;"></div>
+                    <div class="skill-progress" style="width: 80%;" aria-valuenow="80"></div>
                     <div class="skill-percent">80%</div>
                 </div>
                 <div class="skill-item">
                     <h6>Python</h6>
-                    <div class="skill-progress" style="width: 85%;"></div>
+                    <div class="skill-progress" style="width: 85%;" aria-valuenow="85"></div>
                     <div class="skill-percent">85%</div>
                 </div>
                 <div class="skill-item">
                     <h6>Java</h6>
-                    <div class="skill-progress" style="width: 70%;"></div>
+                    <div class="skill-progress" style="width: 70%;" aria-valuenow="70"></div>
                     <div class="skill-percent">70%</div>
                 </div>
             </section>
-            <h2>Certificates</h2>
+            <h2 style="color: #fe7a07;">Certificates</h2>
             <div class="certificates">
                 <img src="Images/CyberSecurity.png" alt="Cyber Security Certificate" loading="lazy">
-                <img src="Images/Networking.jpg" alt="Networking Certificate" loading="lazy">
+                <img src="Images/Networking.jpg" alt="Networking Certificate" loading="lazy" style="height: 170px;">
                 <img src="Images/Udacity.png" alt="Udacity Nanodegree Certificate" loading="lazy">
             </div>
         </main>

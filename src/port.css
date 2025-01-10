@@ -1,0 +1,617 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Irish+Grover&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: none;*/
+    
+    box-sizing: border-box;
+    text-decoration: none;
+}
+main{
+    margin-left: 250px;
+    background: linear-gradient(130deg, #ffffff, #7C8EB6 );
+}
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+}
+body p{
+    font-size: 12px;
+    margin:0 15px;
+    color: #661515;
+}
+body h1,h3,h2{
+    color: #661515;
+}
+.navv {
+    display: none;
+}
+h2{
+    margin:20px 15px;
+    font-size: 18px;
+    font-weight: 700;
+}
+ul {
+    list-style: none;
+   
+}
+.section {
+    background: linear-gradient(90deg, #ffffff, #7C8EB6);
+    display: block;
+   
+}
+
+.container .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.main-container {
+    display: flex;
+    color: white;
+    flex-wrap: nowrap;
+    
+}
+
+.aside {
+    background: linear-gradient(200deg, #ffffff, #7C8EB6 ); 
+    padding: 30px;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    min-width: 250px;
+    position: fixed;
+    
+}
+.name{
+    font-family: "Irish Grover", serif;
+}
+.logo h1{
+  padding-bottom: 50px;
+  font-family: "Irish Grover", serif;}
+
+.logo h1::first-letter{
+    color: #fe7a07;
+    
+}
+.typing{
+    color: #fe7a07;
+}
+.about-btn{
+   
+    font-size: 15px;
+    font-weight: 800;
+     width: 90px; 
+     height: 30px;
+     text-align:center;
+     background-color:#661515;
+     border-radius:10px;
+     color:#ffffff;
+     margin: 40px 20px;
+     border-color: #661515;
+}
+.about-btn:hover{
+    background-color: #FE7A07;
+    border-color: #FE7A07;
+}
+.nav li {
+    border-bottom: 1px solid #000000;
+}
+
+.nav li a {
+    display: block;
+    padding: 15px;
+    color:#661515;
+
+}
+
+nav .nav li a.active {
+    background-color: #7C8EB6; /* Light blue shading */
+   
+    font-weight: bold; 
+ 
+}
+.footer-container{
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 250px;
+    background:  #7C8EB6 ;
+    height: 300px;
+}
+
+.footer-container .footer1 a{
+    color: #FE7A07;
+    font-size: 12px;
+    margin:10px 30px;
+}
+.footer-container .footer2 a{
+    font-size: 12px;
+    margin-right: 50px;
+    color: #661515;
+}
+
+.nav a {
+    color: black; /* Text color */
+    text-decoration: none; /* Remove underline */
+   
+}
+
+.nav a i { 
+    color: rgb(135, 135, 135);
+    border: 0.1px solid rgb(213, 211, 211); /* Icon color */
+    margin-right: 8px;
+    background-color: rgb(215, 215, 212); /* Space between icon and text */
+}
+
+
+
+
+
+
+/*HOME PAGE*/
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+.home .home-info {
+    
+    font-size: 18px;
+    
+    margin-left: 250px;
+   
+}
+.invite{
+    font-family: "Inknut Antiqua", serif;
+    font-size: 18px;
+}
+.main-container.main-content .home-header{
+    color: #661515;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 270px;
+}
+.home .hello{
+    padding-bottom: 50px;
+}
+
+
+.home .home-img img {
+    max-width: 50%; 
+    border-radius: 20%;
+}
+
+.section .container {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+
+
+
+
+
+
+/* ABOUT PAGE*/
+.abot-text{
+    margin-left: 15px;
+}
+.row .padd-15 {
+    border: #D9D9D9 solid 0.1px;
+    background-color: #D9D9D9;
+    flex:0 0 45%;
+    padding:10px 20px;
+    margin-left: 15px;          
+    border-radius: 30px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+                
+    }
+.padd-15 h4{
+    color:#FE7A07;
+    margin-left: 5px;
+    
+}
+
+
+
+
+
+
+/*CONTACT PAGE*/
+
+.contact-img{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-img img{
+    width:250px;
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+}
+.buttons a {
+    padding: 5px 45px; /* Increased padding for more width */
+    border-radius: 30px;
+    margin-left: 50px; 
+    background-color: #7D8FB7;
+    color: #FFFFFF;   
+    }
+.buttons a:hover {
+    background-color: #FE7A07; 
+}
+
+
+
+
+/* PROJECT PAGE */
+
+.img-container a img{
+    width: 300px;
+    padding: 5px 15px;
+    margin-left: 30px;
+    
+}
+.img-container a img:hover{
+    transform: scale(1.2);
+    transition: 0.1s;
+}
+
+
+
+/*SKILLS PAGE*/
+
+.certificates img{
+   width: 220px;
+   
+}
+
+.skills {
+    margin: 20px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-item h6 {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 16px;
+    font-size: 13px;
+}
+
+.skill-progress {
+    height: 6px;
+    background: linear-gradient(to right, #fe7a07 70%, #661515 30%);
+    
+    width: 150px;
+}
+
+.skill-percent {
+    min-width: 40px; 
+    text-align: right;
+    font-weight: bold;
+
+}
+.skills{
+    
+    background-color: #7D8FB7;
+    width: 330px;
+    margin-left: 15px;
+    border-radius: 30px;
+    color: #661515;
+   
+    font-size: 13px;
+}
+
+.skill-item::after {
+    content: '';
+    display: inline-block;
+    width: 1px; 
+    height: 20px; 
+
+    margin: 0 10px; 
+} 
+
+
+
+
+
+/* MEDIA QUIREY */
+
+/* Mobile Portrait */
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+    .aside {
+        display: none; /* Hide aside by default on mobile/tablet */
+    }
+    .main-content {
+        margin-left: 0; /* No margin when aside is hidden */
+    }
+    .navv{
+        display: block;
+        color: #000000;
+        margin: 20px 40px;
+        position: fixed;
+    }
+    .section{
+        
+        margin-left: 0px;
+        align-items: center;
+    }
+.footer-container{
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+    background:  #9ba9c9 ;
+    margin-bottom: 0;
+}
+
+
+.main-content {
+    margin-left: 0; 
+
+}
+.aside {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%; 
+    background-color: #6c757d; 
+    z-index: 1000;
+}
+
+.aside.active {
+    display: block; 
+}
+
+.home {
+    margin-top: 0px;
+
+}
+.home .home-info {
+    font-size: 15px; 
+    margin-left: 0px;
+   
+}
+.home .row{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.home .home-img img {
+    max-width: 60%; 
+   
+}
+.certificates img{
+   width: 70%;
+     margin-left: 60px;
+  }
+  .buttons{
+    margin-left: 100px;
+  }
+.buttons a{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin: 10px;
+
+}
+.contact-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.contact-img img{
+    margin: 10px;
+} 
+.contact-header{ 
+    margin: 25px 70px;
+}
+.about-header{
+    margin: 5px 70px;
+    padding-bottom: 10px;
+}
+.about .row{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin:10px 10px ;
+
+}
+.about .personal-info{
+    margin:15px 15px ;
+}
+}
+
+/* Tablet Portrait */
+@media only screen and (min-width: 810px) and (max-width: 1080px) and (orientation: portrait) {
+    .main-content {
+        margin-left: 0; /* No margin when aside is hidden */
+    }
+    .navv{
+        display: block;
+        color: #000000;
+        margin: 20px 40px;
+        position: fixed;
+    }
+    .section{
+        
+        margin-left: 0px;
+        align-items: center;
+    }
+.footer-container{
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+    background:  #9ba9c9 ;
+    margin-bottom: 0;
+}
+
+
+.main-content {
+    margin-left: 0; 
+
+}
+.aside {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%; 
+    background-color: #6c757d; 
+    z-index: 1000;
+}
+
+.aside.active {
+    display: block; 
+}
+
+.home {
+    margin-top: 0px;
+
+}
+.home .home-info {
+    font-size: 15px; 
+    margin-left: 0px;
+   
+}
+.home .row{
+    display: flex;
+    flex-direction: column;   
+}
+
+.home .home-img img {
+    max-width: 60%; 
+   
+}
+.certificates img{
+   width: 70%;
+     margin-left: 60px;
+   }
+  .buttons {
+    display: flex;
+    justify-content: space-between; 
+    max-width: 400px; 
+    margin: 0 auto; 
+} 
+
+.buttons a {
+    display: inline-block; /* Ensures buttons are treated as blocks */
+    margin: 0 5px; /* Adds horizontal spacing between buttons */
+}
+
+/* Use nth-child to separate the buttons */
+.buttons a:nth-child(-n+2) {
+    order: 1; /* First two buttons */
+}
+
+.buttons a:nth-child(n+3) {
+    order: 2; /* Last two buttons */
+}
+
+.contact-img{
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+ 
+}
+.project-header{
+    margin: 50px 50px;
+font-size: 18px;
+font-weight: 700;
+}
+.main-container p{
+    font-size: 15px;
+}
+.contact-img img{
+    margin: 10px 15px;
+    width: 50%;
+}
+.contact-header{ 
+    margin: 25px 70px;
+}
+.about-header{
+    margin: 5px 70px;
+    padding-bottom: 10px;
+}
+.about .row{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin:10px 10px ;
+
+}
+.about .personal-info{
+    margin:15px 15px ;
+}
+.footer-container{
+    border-top: 1px solid black;
+    margin-bottom: 0px;
+    height: 350px;
+    font-size: 25px;
+}}
+
+/* Mobile Landscape */
+@media only screen and (max-width: 815px) and (orientation: landscape) {
+   
+    .certificates img{
+        width: 170px;
+        height: 170px;
+        
+     }
+     .home .home-img img {
+        margin-top: 100px;
+       
+    }
+    .img-container{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .img-container img {
+       width: 80px;
+       
+    }
+    .buttons a {
+        padding: 5px 35px; /* Increased padding for more width */
+        
+        margin-left: 30px; 
+        
+        }
+    }
+
+/* Tablet Landscape */
+@media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+    .footer-container{
+        border-top: 1px solid black;
+        margin-bottom: 0px;
+        height: 350px;
+        font-size: 25px;
+    }
+}
+

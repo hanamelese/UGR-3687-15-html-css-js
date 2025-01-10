@@ -12,13 +12,12 @@
 </head>
 
 <body>
-    <div class="main-container">
-        <aside class="aside">
-            <header class="logo">
+    <div class="main-container" role="main">
+        <aside class="aside" id="sidebar" role="navigation">
+            <div class="logo">
                 <h1>Portfolio</h1>
-            </header>
-            <div class="toggle-menu" id="toggleMenu"></div>
-            <nav>
+            </div>
+            <nav aria-label="Main Navigation">
                 <ul class="nav" id="navLinks">
                     <li><a href="Home.html" class="active"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="About.html"><i class="fa fa-user"></i> About</a></li>
@@ -29,7 +28,7 @@
             </nav>
         </aside>
         <main class="main-content">
-            <div class="navv"><i class="fa fa-bars"></i></div>
+            <div class="navv" onclick="toggleSidebar()" aria-label="Toggle Sidebar"><i class="fa fa-bars"></i></div>
             <h2 class="contact-header">Contact</h2>
             <div class="buttons">
                 <a href="https://www.linkedin.com/in/hanamelese" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
@@ -50,7 +49,6 @@
                 <img src="Images/photo2.jpg" alt="Image 1">
                 <img src="Images/photo3.jpg" alt="Image 2">
             </div>
-            
             <div class="description">
                 <p>
                     As I wrap up this chapter, I want to extend my heartfelt gratitude for taking the time to explore my work. Your interest and support mean the world to me.
@@ -58,7 +56,7 @@
                     Wishing you all the best in your own journeys!
                 </p>
             </div>
-        </main>       
+        </main>
     </div>
 
     <footer>

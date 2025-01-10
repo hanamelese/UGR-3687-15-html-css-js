@@ -10,13 +10,12 @@
 </head>
 
 <body>
-    <div class="main-container">
-        <aside class="aside">
+    <div class="main-container" role="main">
+        <aside class="aside" id="sidebar" role="navigation">
             <div class="logo">
                 <h1>Portfolio</h1>
             </div>
-            <div class="toggle-menu" id="toggleMenu"></div>
-            <nav>
+            <nav aria-label="Main Navigation">
                 <ul class="nav" id="navLinks">
                     <li><a href="Home.html" class="active"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="About.html"><i class="fa fa-user"></i> About</a></li>
@@ -27,7 +26,7 @@
             </nav>
         </aside>
         <main class="main-content">
-            <div class="navv"><i class="fa fa-bars"></i></div>
+            <div class="navv" onclick="toggleSidebar()" aria-label="Toggle Sidebar"><i class="fa fa-bars"></i></div>
             <h2 class="project-header">Projects</h2>
             <p>During my software engineering studies, I developed a diverse portfolio of projects that highlight my skills in full-stack development, algorithm design, and teamwork. My responsive web applications help users track fitness goals and showcase my proficiency with technologies like JavaScript, Python, and SQL. Each project demonstrates my ability to solve complex challenges, optimize performance, and create user-friendly interfaces. These experiences have enhanced my problem-solving skills and reinforced the importance of agile development practices, resulting in well-received applications focused on user experience and functionality.</p>
             
@@ -35,15 +34,15 @@
                 <a href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer">
                     <img src="Images/Amazon.jpg" alt="Amazon Project">
                 </a>
-                <a href="#">
+                <a href="https://www.netflix.com/et/">
                     <img src="Images/Netflix.jpg" alt="Netflix Project">
                 </a>
             </div>
             <div class="img-container">
-                <a href="#">
-                    <img src="Images/Apple.png" alt="Apple Project">
+                <a href="https://www.apple.com/">
+                    <img src="Images/Apple.png" alt="Apple Project" style="height: 200px;">
                 </a>
-                <a href="#">
+                <a href="https://www.tesla.com/">
                     <img src="Images/Tesla.jpg" alt="Tesla Project">
                 </a>
             </div>
@@ -58,7 +57,7 @@
                     <a href="https://www.linkedin.com/in/hanamelese" target="_blank" rel="noopener noreferrer">LinkedIn</a>,
                     <a href="https://github.com/hanamelese" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </p>
-                <p>© 2024 Your Name. All rights reserved.</p>
+                <p>© 2024 Hana Melese. All rights reserved.</p>
             </div>
             <div class="footer2">
                 <ul class="footer-nav">
